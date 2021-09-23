@@ -12,9 +12,9 @@ Reasons for scripts
 
 ----------------------
 
-# Heading 2 Dependencies
- linux system
- ffmpeg
+** Dependencies
+ * linux system
+ * ffmpeg
 
 ---------------------
 
