@@ -44,37 +44,37 @@ How to use
  .acs 
  Be sure to include the period at the beginning. You should see a list like this
 
- flac-flac-43
- flac-flac-44
- flac-flac-48
- flac-m4a-44
- flac-m4a-48
- flac-ogg-44
- flac-wav-44
- flac-wav-48
- m4a-flac-43
- m4a-flac-44
- m4a-flac-48
- m4a-mp3-44
- mp3-m4a-44
- mp3-m4a-48
- mp3-ogg-43
- mp3-ogg-44
- mp3-ogg-48
- mp4-flac-43
- mp4-flac-44
- mp4-flac-48
- ogg-m4a-44
- ogg-m4a-48
- wav-flac-43
- wav-flac-44
- wav-flac-48
- wav-m4a-44
- wav-m4a-48
- wav-mp3-44
- webm-flac-43
- webm-flac-44
- webm-flac-48
+ * flac-flac-43
+ * flac-flac-44
+ * flac-flac-48
+ * flac-m4a-44
+ * flac-m4a-48
+ * flac-ogg-44
+ * flac-wav-44
+ * flac-wav-48
+ * m4a-flac-43
+ * m4a-flac-44
+ * m4a-flac-48
+ * m4a-mp3-44
+ * mp3-m4a-44
+ * mp3-m4a-48
+ * mp3-ogg-43
+ * mp3-ogg-44
+ * mp3-ogg-48
+ * mp4-flac-43
+ * mp4-flac-44
+ * mp4-flac-48
+ * ogg-m4a-44
+ * ogg-m4a-48
+ * wav-flac-43
+ * wav-flac-44
+ * wav-flac-48
+ * wav-m4a-44
+ * wav-m4a-48
+ * wav-mp3-44
+ * webm-flac-43
+ * webm-flac-44
+ * webm-flac-48
 
  The script name says what it does, for example "flac-m4a-48" means that the script
  will convert files with a .flac extentions to .m4a with a sample rate of 48000.
@@ -84,9 +84,9 @@ How to use
  in the current directory to .m4a files. 
 
  The numbers at the end of the file name represent sample rates:
- 43 = 43200
- 44 = 44100
- 48 = 48000
+ * 43 = 43200
+ * 44 = 44100
+ * 48 = 48000
 
  NOTE: the origial files will be deleted, so ALWAYS work with copies of original files.
 
