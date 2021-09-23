@@ -12,29 +12,29 @@ Reasons for scripts
 
 ----------------------
 
-# Dependencies 2
+# Dependencies
  * linux system
  * ffmpeg
 
 ---------------------
 
-# Installation 2
+# Installation
  Clone repo, or download zip file and unzip. From terminal, cd to directory
  AudioConversionScripts and run the command:
- 'cp -r acs ~/.local/bin/'
+ `cp -r acs ~/.local/bin/`
  This will copy the folder "acs" to your local/bin directory. Which in most systems
  should be in your $PATH. 
 
  Next,the scripts need to be made executable by running these two commands:
- 'chmod +x ~/.local/bin/acs/*'
- 'chmod +x ~/.local/bin/acs/.acs'
+ `chmod +x ~/.local/bin/acs/*`
+ `chmod +x ~/.local/bin/acs/.acs`
 
  Now from the terminal, check if your local/bin is in your PATH by running:
  echo "$PATH"
  if you don't see /home/user_name/.local/bin then, you will need to add it.
  
  Edit your ~/.bashrc or ~/.bash_profile and add the following at the end of the file:
- export PATH=$PATH: ~/.local/bin
+ `export PATH=$PATH: ~/.local/bin`
 
 ---------------------
 
