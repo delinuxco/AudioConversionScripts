@@ -1,4 +1,4 @@
-#AudioConversionScripts
+# AudioConversionScripts
  A series of linux shell scripts for converting audio formats in batch process,
  example .wav to .flac   or .m4a to .mp3 and .flac to .wav etc.
 
