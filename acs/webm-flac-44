@@ -1,0 +1,54 @@
+#!/bin/bash
+### Created by Joao (John) Machado john at delinuxco dot com ###
+#
+#A script desgined to batch process audio file conversions.
+#((( Audio Conversion Scripts )))
+echo "******************************"
+echo "** Audio Conversion Scripts **"
+echo "**       For Linux          **"
+echo "******************************"
+echo "----------------------------------------------------"
+echo "|Use at own risk, no warranty implied or expressed!|"
+echo "|Not responsible for lost or damaged data!         |"
+echo "|---------------------------------------------------"
+#You can edit these two variables to fit your needs,
+#iext = the input file extension type, 
+#oext = the output file extension desired.
+#NOTE: You must edit the FFMPEG line accordingly to match your output file format.
+iext=webm
+oext=flac
+#
+#Warn users of the actions of the script.
+yn() {
+printf " Reply [y/n]: "
+read yn
+[[ "$yn" != y ]] && [[ "$yn" != n ]] && yn
+}
+# warning
+printf "(((Warning))) This operation will delete all .$iext files in this directory,you should be working on a copy of the original files! Do you wish to continue with conversion?"
+yn
+[[ "$yn" = n ]] && exit
+#
+#From this point on in the script, any errors will cause the script to stop.
+set -e
+#
+#create output directory in current directory but first, in case of any previously failed conversion, if the directory already exists, it will be completely deleted in order to have a clean start.
+rm -Rf outdir
+mkdir outdir
+#
+#FFMPEG
+for f in *.$iext; do ffmpeg -i "$f" -sample_fmt s32 -ar 44100 "outdir/${f%.*}.$oext"; done
+#
+#Remove original audio files
+rm *.$iext
+#
+#Move new files out of output directory and delete the output directory.
+mv outdir/*.$oext .
+rmdir outdir
+#
+#Successful conversion notice.
+echo All .$iext files have been converted to .$oext, "Success!"
+
+exit 0
+
+
