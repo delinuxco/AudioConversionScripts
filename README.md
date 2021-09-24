@@ -12,13 +12,13 @@ Reasons for scripts
 
 ----------------------
 
-# Dependencies
+## Dependencies
  * linux system
  * ffmpeg
 
 ---------------------
 
-# Installation
+## Installation
  Clone repo, or download zip file and unzip. From terminal, cd to directory
  AudioConversionScripts and run the command:
 
@@ -43,9 +43,10 @@ Reasons for scripts
  `export PATH=$PATH: ~/.local/bin`
 
  You may have to logout and back in for changes to take effect.
+
 ---------------------
 
-# How to use
+## How to use
  Because the scripts are in a folder that is in your PATH, executing the scripts is easy.
  First to see all of the current format combinations, open a terminal and type:
 
@@ -107,3 +108,5 @@ Reasons for scripts
  the *iext* & *oext* extensions and the FFMPEG settings line if applicable. Save the file
  under a new name in the acs folder and make the new script executable. Do not add
  the .sh extention to the new script.
+
+![acs_example](https://user-images.githubusercontent.com/69424808/134644593-0fbfa4fc-a6dd-44d2-9c5a-0ab96c602b16.png)
