@@ -21,27 +21,36 @@ Reasons for scripts
 # Installation
  Clone repo, or download zip file and unzip. From terminal, cd to directory
  AudioConversionScripts and run the command:
+
  `cp -r acs ~/.local/bin/`
+
  This will copy the folder "acs" to your local/bin directory. Which in most systems
  should be in your $PATH. 
 
  Next,the scripts need to be made executable by running these two commands:
+
  `chmod +x ~/.local/bin/acs/*`
  `chmod +x ~/.local/bin/acs/.acs`
 
  Now from the terminal, check if your local/bin is in your PATH by running:
- echo "$PATH"
- if you don't see /home/user_name/.local/bin then, you will need to add it.
+
+ `echo "$PATH"`
+
+ If you don't see /home/user_name/.local/bin then, you will need to add it.
  
  Edit your ~/.bashrc or ~/.bash_profile and add the following at the end of the file:
+
  `export PATH=$PATH: ~/.local/bin`
 
+ You may have to logout and back in for changes to take effect.
 ---------------------
 
-How to use
+# How to use
  Because the scripts are in a folder that is in your PATH, executing the scripts is easy.
  First to see all of the current format combinations, open a terminal and type:
- .acs 
+
+ `.acs` 
+
  Be sure to include the period at the beginning. You should see a list like this
 
  * flac-flac-43
@@ -92,6 +101,9 @@ How to use
 
 ---------------------
 
-Creating your own custom scripts
+# Creating your own custom scripts
  If you have other formats that you would like to convert, you can easily use any of
- of the existing scripts as a template. The only things that need to be changed is the iext & oext extensions and the FFMPEG settings line if applicable. Save the file under a new name in the acs foder and make the new script executable. Do not add the .sh extention to the new script.
+ of the existing scripts as a template. The only thing that need to be changed is
+ the *iext* & *oext* extensions and the FFMPEG settings line if applicable. Save the file
+ under a new name in the acs folder and make the new script executable. Do not add
+ the .sh extention to the new script.
