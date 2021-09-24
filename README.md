@@ -102,7 +102,7 @@ Reasons for scripts
 
  To encode files in .m4a, ffmpeg will need to have *libfdk_aac* enabled/compiled.
 
- NOTE: the origial files will be deleted, so ALWAYS work with copies of original files.
+ NOTE: The existing files will be deleted, so ALWAYS work with copies of original files.
 
 ---------------------
 
@@ -114,3 +114,7 @@ Reasons for scripts
  the .sh extention to the new script.
 
 ![acs_example](https://user-images.githubusercontent.com/69424808/134644593-0fbfa4fc-a6dd-44d2-9c5a-0ab96c602b16.png)
+
+ When editing the FFMPEG flags (the green box in the above image), it is imparitive that
+ the spaces before and after are there (red arrows) or the script will fail. You can add
+ as many flags in the green box as necessary.
