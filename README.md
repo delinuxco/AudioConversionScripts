@@ -46,6 +46,12 @@ Reasons for scripts
 
  You may have to logout and back in for changes to take effect.
 
+### Multi-thread performace
+ The scripts by default are set to use 2 threads, you can change this by editing the script
+ directly and changing the FFMPEG flag *"-threads 2"* what what ever number of threads you want.
+ But for those of you with many threads, you are limited by your IO, so too many threads can actually
+ hurt performance.
+
 ---------------------
 
 ## How to use

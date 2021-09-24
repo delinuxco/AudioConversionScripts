@@ -37,7 +37,7 @@ rm -Rf outdir
 mkdir outdir
 #
 #FFMPEG
-for f in *.$iext; do ffmpeg -i "$f" -ar 44100 -b:a 256k "outdir/${f%.*}.$oext"; done
+for f in *.$iext; do ffmpeg -i "$f" -ar 44100 -b:a 256k -threads 2 "outdir/${f%.*}.$oext"; done
 #
 #Remove original audio files
 rm *.$iext

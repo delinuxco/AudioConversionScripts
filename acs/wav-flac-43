@@ -37,7 +37,7 @@ rm -Rf outdir
 mkdir outdir
 #
 #FFMPEG
-for f in *.$iext; do ffmpeg -i "$f" -sample_fmt s32 -ar 43200 "outdir/${f%.*}.$oext"; done
+for f in *.$iext; do ffmpeg -i "$f" -sample_fmt s32 -ar 43200 -threads 2 "outdir/${f%.*}.$oext"; done
 #
 #Remove original audio files
 rm *.$iext
