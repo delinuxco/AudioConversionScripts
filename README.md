@@ -88,12 +88,12 @@ Reasons for scripts
  * webm-flac-44
  * webm-flac-48
 
- The script name says what it does, for example "flac-m4a-48" means that the script
- will convert files with a .flac extentions to .m4a with a sample rate of 48000.
+ The script name says what it does, for example "wav-flac-48" means that the script
+ will convert files with a .wav extentions to .flac with a sample rate of 48000.
  Make a copy of a directory with audio files with an extention of either flac, m4a or
  mp3. open a terminal in that directory and if your files are .flac, and you want to
- convert them to .m4a, simply type: flac-m4a-48 and the script will convert all files
- in the current directory to .m4a files. 
+ convert them to .m4a, simply type: wav-flac-48 and the script will convert all files
+ in the current directory to .flac files. 
 
  The numbers at the end of the file name represent sample rates:
  * 43 = 43200
