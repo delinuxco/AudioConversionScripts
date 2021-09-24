@@ -100,6 +100,8 @@ Reasons for scripts
  * 44 = 44100
  * 48 = 48000
 
+ To encode files in .m4a, ffmpeg will need to have *libfdk_aac* enabled/compiled.
+
  NOTE: the origial files will be deleted, so ALWAYS work with copies of original files.
 
 ---------------------
