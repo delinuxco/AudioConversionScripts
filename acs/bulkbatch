@@ -1,0 +1,50 @@
+#!/bin/bash
+### Created by Joao (John) Machado john at delinuxco dot com ###
+#
+#A script desgined to batch process audio file conversions.
+#((( Audio Conversion Scripts )))
+# This script will initalize multiple scripts to batch process multiple directories of audio files.
+echo "******************************"
+echo "** Audio Conversion Scripts **"
+echo "**       For Linux          **"
+echo "******************************"
+echo "----------------------------------------------------"
+echo "|Use at own risk, no warranty implied or expressed!|"
+echo "|    Not responsible for lost or damaged data!     |"
+echo "----------------------------------------------------"
+#
+#Warn users of the actions of the script.
+yn() {
+printf " Reply [y/n]: "
+read yn
+[[ "$yn" != y ]] && [[ "$yn" != n ]] && yn
+}
+# warning
+printf "                     (((Warning)))
+This operation will delete all of the files in their current format
+in their current directory, always work with a copy of the original files!
+Do you wish to continue with bulk conversion?"
+yn
+[[ "$yn" = n ]] && exit
+#
+#From this point on in the script, any errors will cause the script to stop.
+set -e
+#
+#Add your directories in this section add as many directories as needed. Note: directory names with spaces must be put in double quotes. (Examples below) note: the echo "y" will automatically insert the yes to process flag.
+#
+#***User Section***
+#1 Directory
+cd ~/Music/ABBA/Gold
+echo "y" | wav-flac-48 
+#2 Directory
+cd ~/Music/"Neil Diamond"/"His 12 Greatest Hits"
+echo "y" | flac-m4a-44
+#3 Directory
+cd ~/Music/"Steely Dan"/"A Decade of Steely Dan (Remastered)"
+echo "y" | ogg-mp3-44
+#***User section***
+#
+#
+echo **************************************************************************
+echo Success! Looks like your bulk batch conversion completed with no errors.
+exit 0

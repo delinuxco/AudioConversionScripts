@@ -124,3 +124,12 @@ Reasons for scripts
  When editing the FFMPEG flags (the green box in the above image), it is imparitive that
  the spaces before and after are there (red arrows) or the script will fail. You can add
  as many flags in the green box as necessary.
+
+# Bulk Batch processing
+ To batch process multiple directories, a separate script will execute the necessary script per directory.
+ simply edit the *bulkbatch* file in ~/.local/bin/acs with your favorite editor. Edit/add the directories
+ in the the section ***User Section ***. Please note that you may encounter errors in transcoding which causes
+ the script to stop. As always, never work with origianl files, ALWAYS copies!
+
+ To use the script, once edited to your liking, simply run `bulkbatch` from the terminal, does not matter the
+ location where the script is executed.
