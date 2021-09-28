@@ -30,7 +30,9 @@ yn
 #From this point on in the script, any errors will cause the script to stop.
 set -e
 #
-#Add your directories in this section add as many directories as needed. Note: directory names with spaces must be put in double quotes. (Examples below) note: the echo "y" will automatically insert the yes to process flag.
+#Add your directories in this section add as many directories as needed.
+#Note: directory names with spaces must be put in double quotes. (Examples below)
+#note: the echo "y" will automatically insert the "yes" to process flag.
 #
 #***User Section***
 #1 Directory
