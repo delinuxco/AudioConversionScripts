@@ -24,7 +24,7 @@ Reasons for scripts
  Clone repo, or download zip file and unzip. From terminal, cd to directory
  AudioConversionScripts and run the command:
 
- `cp -r acs ~/.local/bin/`
+ `cp -r acs ~/.local/bin/acs`
 
  This will copy the folder "acs" to your local/bin directory. Which in most systems
  should be in your $PATH. 
@@ -48,7 +48,7 @@ Reasons for scripts
 
 ### Multi-thread performace
  The scripts by default are set to use 2 threads, you can change this by editing the script
- directly and changing the FFMPEG flag *"-threads 2"* what what ever number of threads you want.
+ directly and changing the FFMPEG flag *"-threads 2"* what ever number of threads you want.
  But for those of you with many threads, you are limited by your IO, so too many threads can actually
  hurt performance.
 
