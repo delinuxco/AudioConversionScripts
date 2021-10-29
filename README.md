@@ -24,7 +24,7 @@ Reasons for scripts
  Clone repo, or download zip file and unzip. From terminal, cd to directory
  AudioConversionScripts and run the command:
 
- `cp -r acs ~/.local/bin/acs`
+ `rsync -a acs ~/.local/bin/`
 
  This will copy the folder "acs" to your local/bin directory. Which in most systems
  should be in your $PATH. 
