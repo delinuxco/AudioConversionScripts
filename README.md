@@ -47,8 +47,13 @@ Reasons for scripts
 ### Multi-thread performace
  The scripts by default are set to use 2 threads, you can change this by editing the script
  directly and changing the FFMPEG flag *"-threads 2"* what ever number of threads you want.
- But for those of you with many threads, you are limited by your IO, so too many threads can actually
- hurt performance.
+ But for those of you with many threads, you are limited by your IO, so too many threads\
+ can actually  hurt performance.
+
+ You can edit any script with a text editor, either graphical or gui,\
+ example using the command line with the nano editor.
+ 
+ `nano ~/.local/bin/acs/flac-m4a-44`
 
 ---------------------
 
