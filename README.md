@@ -31,12 +31,12 @@ Reasons for scripts
 
  Next,the scripts need to be made executable by running these two commands:
 
- `chmod +x ~/.local/bin/acs/*`
+ `chmod +x ~/.local/bin/acs/*`\
  `chmod +x ~/.local/bin/acs/.acs`
 
  Edit your ~/.profile and ~/.bash_profile and add the following at the end of the file:
 
- `PATH=$PATH:~/.local/bin`
+ `PATH=$PATH:~/.local/bin`\
  `PATH=$PATH:~/.local/bin/acs`
 
  Logout of your session and log back in and verify the scripts are in your path:
