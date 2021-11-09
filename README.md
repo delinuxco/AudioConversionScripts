@@ -34,18 +34,16 @@ Reasons for scripts
  `chmod +x ~/.local/bin/acs/*`
  `chmod +x ~/.local/bin/acs/.acs`
 
- Now from the terminal, check if your local/bin is in your PATH by running:
+ Edit your ~/.profile and ~/.bash_profile and add the following at the end of the file:
+
+ `PATH=$PATH:~/.local/bin`
+ `PATH=$PATH:~/.local/bin/acs`
+
+ Logout of your session and log back in and verify the scripts are in your path:
 
  `echo "$PATH"`
 
- If you don't see /home/user_name/.local/bin then, you will need to add it.
  
- Edit your ~/.bashrc or ~/.bash_profile and add the following at the end of the file:
-
- `export PATH=$PATH: ~/.local/bin`
-
- You may have to logout and back in for changes to take effect.
-
 ### Multi-thread performace
  The scripts by default are set to use 2 threads, you can change this by editing the script
  directly and changing the FFMPEG flag *"-threads 2"* what ever number of threads you want.
